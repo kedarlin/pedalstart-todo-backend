@@ -22,7 +22,7 @@ app.use('/api/user', userRoutes);
 app.use('/api/auth',authRoutes);
 app.use('/api/task', taskRoutes);
 
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
   res.send('Hello');
 });
 // Start the server
